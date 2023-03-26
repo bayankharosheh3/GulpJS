@@ -1,0 +1,56 @@
+/* university page start */
+.uni {
+  background-image: url("../images/R.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* about start */
+.about-sec {
+  border-top: #ff20204e 1px solid;
+  border-bottom: #ff20204e 1px solid;
+}
+
+.about-sec .about-content .about-title {
+  color: #ff2020;
+}
+
+.about-sec .about-content .about-para {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .about-img,
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+  .about-img img {
+    max-width: 80%;
+  }
+}
+
+/* about end */
+
+/* faculties start*/
+
+.faculties-sec .title .faculties-title {
+  color: #ff2020;
+}
+
+.faculties-sec .faculties-items .faculties-item .faculties-img {
+  border-bottom: #ff2020 3px solid;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.faculties-sec .faculties-items .faculties-item .faculties-caption {
+  color: #ff2020;
+}
+
+
+
+/* faculties end */
+
+/* university page end */
