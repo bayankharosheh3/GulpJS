@@ -14,21 +14,19 @@ toggle.addEventListener("click", () => {
 // stop refresh
 
 window.addEventListener("load", function () {
-  if (window.location.hash === "") {
-    window.location.hash = "#home";
-    fetch("home.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.querySelector("#content").innerHTML = data;
-        document.querySelector("#home").classList.add(active);
-      })
-      .catch((error) => console.log(error));
-  }
+  window.location.hash = "#home";
+  fetch("home.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.querySelector("#content").innerHTML = data;
+      document.querySelector("#home").classList.add(active);
+    })
+    .catch((error) => console.log(error));
 });
 
 window.addEventListener("hashchange", function () {
   var hash = window.location.hash;
-  console.log(hash);
+  //   console.log(hash);
   fetch(hash.slice(1) + ".html")
     .then((response) => response.text())
     .then((data) => {

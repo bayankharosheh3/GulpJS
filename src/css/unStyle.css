@@ -21,11 +21,6 @@
 }
 
 @media (max-width: 768px) {
-  .about-img,
-  .about-content {
-    width: 100%;
-    text-align: center;
-  }
   .about-img img {
     max-width: 80%;
   }

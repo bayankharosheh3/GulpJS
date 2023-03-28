@@ -1,24 +1,7 @@
 /* public style */
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 body {
   background-color: #222;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .btn1 {
@@ -90,29 +73,15 @@ nav .nav-item:hover .nav-link {
 }
 
 @media (max-width: 567px) {
-
-  .toggle-btn {
-    display: flex !important;
-  }
-
   .nav-links {
-    flex-direction: column !important;
     position: absolute;
     background-color: #222;
     top: 53px;
     left: 0;
-    padding-left: 6% !important;
   }
 
   .nav-links-none {
     display: none;
-  }
-
-
-  .nav-links ul {
-    padding-top: 10px;
-    flex-direction: column !important;
-    align-items: start !important;
   }
 }
 /* nav end */
