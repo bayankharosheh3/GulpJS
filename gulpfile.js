@@ -4,6 +4,16 @@ const concat = require("gulp-concat");
 const cleanCss = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
 
+var gulp = require("gulp");
+var deploy = require("gulp-gh-pages");
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
+
 gulp.task("styles", function () {
   return gulp
     .src(["src/css/*.css", "node_modules/bootstrap/dist/css/bootstrap.css"])
