@@ -4,6 +4,14 @@ const concat = require("gulp-concat");
 const cleanCss = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
 
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*')  // Update the source folder according to your project structure
+    .pipe(ghPages());
+});
+
+
 gulp.task("styles", function () {
   return gulp
     .src(["src/css/*.css", "node_modules/bootstrap/dist/css/bootstrap.css"])
